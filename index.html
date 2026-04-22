@@ -86,13 +86,13 @@
 
             <form action="">
                 <label for="nome">Nome: </label>
-                <input type="text" id="nome" nome="nome"> <br>
+                <input type="text" id="nome" nome="nome" required> <br>
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" nome="email"> <br>
+                <input type="email" id="email" nome="email" required> <br>
 
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" nome="telefone"> <br>
+                <input type="tel" id="telefone" nome="telefone" required> <br>
 
                 <label for="assunto">Assunto</label>
                 <select name="assunto" id="assunto">
@@ -101,8 +101,18 @@
                     <option value="outro">Outro</option>
                 </select>
 
+                <br>
+
                 <label for="mensagem">Mensagem</label>
-                <textarea name="" id=""></textarea>
+                <textarea name="mensagem" id="mensagem" cols="25" rows="5" required></textarea> <br>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Desejo me inscrever para receber novidades</label>
+                
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+
             </form>
 
             <address>
